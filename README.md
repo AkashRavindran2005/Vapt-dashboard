@@ -72,7 +72,7 @@ Enterprise VAPT is a comprehensive vulnerability assessment and penetration test
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/username/enterprise-vapt.git
+git clone https://github.com/AkashRavindran2005/Vapt-dashboard.git
 cd enterprise-vapt
 ```
 
