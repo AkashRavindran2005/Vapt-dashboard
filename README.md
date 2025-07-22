@@ -1,4 +1,4 @@
-# Enterprise VAPT - Ultra-Fast Vulnerability Assessment Platform
+# Enterprise VAPT 
 
 **Professional vulnerability assessment and penetration testing platform built for security professionals**
 
