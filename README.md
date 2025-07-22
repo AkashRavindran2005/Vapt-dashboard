@@ -322,5 +322,5 @@ npm run dev
 
 - Users are responsible for ensuring proper authorization
 - Unauthorized scanning is illegal and unethical
-- The developers are not responsible for misuse
+- The developer is not responsible for misuse
 - Always comply with local laws and regulations
