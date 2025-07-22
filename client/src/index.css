@@ -1,0 +1,129 @@
+/* Professional VAPT Scanner Styles - Fixed Overflow Issues */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8fafc;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+/* Fixed Overflow Issues */
+.vuln-list,
+.ports-grid,
+.service-grid,
+.debug-logs,
+.confidence-factors {
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+.vuln-list::-webkit-scrollbar,
+.ports-grid::-webkit-scrollbar,
+.service-grid::-webkit-scrollbar,
+.debug-logs::-webkit-scrollbar,
+.confidence-factors::-webkit-scrollbar {
+  width: 6px;
+}
+
+.vuln-list::-webkit-scrollbar-track,
+.ports-grid::-webkit-scrollbar-track,
+.service-grid::-webkit-scrollbar-track,
+.debug-logs::-webkit-scrollbar-track,
+.confidence-factors::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.vuln-list::-webkit-scrollbar-thumb,
+.ports-grid::-webkit-scrollbar-thumb,
+.service-grid::-webkit-scrollbar-thumb,
+.debug-logs::-webkit-scrollbar-thumb,
+.confidence-factors::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+/* Result Card Overflow Protection */
+.result-card {
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.result-target {
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .results-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .vuln-list,
+  .ports-grid,
+  .confidence-factors {
+    max-height: 200px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .debug-panel {
+    display: none !important;
+  }
+  
+  .result-actions {
+    display: none !important;
+  }
+  
+  .sidebar {
+    display: none !important;
+  }
+  
+  .main-content {
+    margin-left: 0 !important;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .result-card {
+    border: 2px solid black !important;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
