@@ -11,7 +11,7 @@ Enterprise VAPT is a comprehensive vulnerability assessment and penetration test
 ## Key Features
 
 ### Core Capabilities
-- **Ultra-Fast Scanning**: Advanced parallel scanning with RustScan and Nmap integration
+- **Fast Scanning**: Advanced parallel scanning with RustScan and Nmap integration
 - **Multi-Target Support**: Concurrent scanning of up to 500 targets simultaneously
 - **Comprehensive Detection**: 20+ security tools integration for maximum coverage
 - **Real-Time Dashboard**: Modern React interface with live progress tracking
@@ -39,11 +39,8 @@ Enterprise VAPT is a comprehensive vulnerability assessment and penetration test
 
 **Frontend (Vite React)**
 - React 18 with functional components and hooks
-- Vite for lightning-fast build and development
-- Tailwind CSS for utility-first styling
 - Lucide React for professional icons
 - jsPDF for client-side PDF generation
-- Axios for HTTP client communication
 
 **Backend (Python FastAPI)**
 - FastAPI for modern, fast Python web framework
