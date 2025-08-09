@@ -1,4 +1,3 @@
-/* Professional VAPT Scanner Styles - Fixed Overflow Issues */
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +15,6 @@ body {
   line-height: 1.6;
 }
 
-/* Fixed Overflow Issues */
 .vuln-list,
 .ports-grid,
 .service-grid,
@@ -54,7 +52,6 @@ body {
   border-radius: 3px;
 }
 
-/* Result Card Overflow Protection */
 .result-card {
   overflow: hidden;
   word-wrap: break-word;
@@ -88,7 +85,6 @@ body {
   }
 }
 
-/* Print Styles */
 @media print {
   .debug-panel {
     display: none !important;
@@ -107,7 +103,6 @@ body {
   }
 }
 
-/* High Contrast Mode */
 @media (prefers-contrast: high) {
   body {
     background: white !important;
@@ -119,7 +114,6 @@ body {
   }
 }
 
-/* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
